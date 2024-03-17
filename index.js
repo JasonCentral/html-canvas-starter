@@ -21,9 +21,18 @@ function initCanvas() {
 }
 
 function startAnimation() {
+  const ball = new Circle({
+    canvas,
+    x: canvas.width / 2,
+    y: canvas.height / 2,
+    r: 50,
+    color: "red",
+  });
+
   function animate() {
     canvas.clear();
     canvas.drawText(mouse.pos, "Mouse");
+    ball.draw();
     requestAnimationFrame(animate);
   }
   animate();

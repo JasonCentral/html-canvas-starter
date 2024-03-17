@@ -42,6 +42,14 @@ class Canvas {
   clear() {
     this.#context.reset();
   }
+
+  get width() {
+    return this.#canvas.width;
+  }
+
+  get height() {
+    return this.#canvas.height;
+  }
 }
 
 export default Canvas;
