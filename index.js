@@ -9,6 +9,7 @@ const mouse = new Mouse();
 function initCanvas() {
   canvas.resize();
 
+  let canvasResizeEvent;
   window.addEventListener("resize", function () {
     clearTimeout(canvasResizeEvent);
     canvasResizeEvent = setTimeout(canvas.resize.bind(canvas), 100);
