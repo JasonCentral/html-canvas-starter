@@ -1,4 +1,4 @@
-import { timeout } from "./util.js";
+import { timeout, randInt } from "./util.js";
 
 let colorArr = ["#10454F", "#506266", "#818274", "#A3AB78", "#BDE038"];
 
