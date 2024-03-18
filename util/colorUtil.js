@@ -30,6 +30,8 @@ async function fetchColorTheme(hex) {
   }
 }
 
-await fetchColorTheme(randomHexColorCode());
+async function fetchRandomColorTheme() {
+  await fetchColorTheme(randomHexColorCode());
+}
 
-export { pickRandomColor };
+export { pickRandomColor, fetchRandomColorTheme };

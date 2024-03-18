@@ -1,7 +1,6 @@
 import Canvas from "./canvas/Canvas.js";
 import Circle from "./canvas/Circle.js";
 import Mouse from "./canvas/Mouse.js";
-import { pickRandomColor } from "./util/colorUtil.js";
 
 const canvas = new Canvas(document.querySelector("canvas"));
 const mouse = new Mouse();
