@@ -3,7 +3,7 @@ import { timeout, randInt } from "./util.js";
 let colorArr = ["#10454F", "#506266", "#818274", "#A3AB78", "#BDE038"];
 
 function pickRandomColor() {
-  return colorArr.at(randInt(0, colorArr.length));
+  return colorArr.at(randInt(0, colorArr.length - 1));
 }
 
 function randomHexColorCode() {
